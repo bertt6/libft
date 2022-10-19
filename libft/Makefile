@@ -64,7 +64,7 @@ all: $(NAME)
 	$(CC) -c $(FLAGS) -o $@ $<
 #$@, oluşturulan hedefin adıdır ve $< ilk ön koşuldur
 
-$(NAME): $(OBJS) 
+$(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean: 
@@ -76,11 +76,6 @@ fclean:	clean
 re: fclean all
 
 bonus: $(BONUSOBJS)
-	$(CC) $(BONUSSRC) $(FLAGS)
+	$(CC) -c $(BONUSSRC) $(FLAGS)
 	ar rcs $(NAME) $(BONUSOBJS)
-
-
-#	target: rule
-#	iç
-
 
