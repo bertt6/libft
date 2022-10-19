@@ -6,7 +6,7 @@
 /*   By: bsamli <bsamli@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 17:28:40 by bsamli            #+#    #+#             */
-/*   Updated: 2022/10/18 13:19:04 by bsamli           ###   ########.fr       */
+/*   Updated: 2022/10/19 15:38:51 by bsamli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,4 @@ t_list	*ft_lstnew(void *content)
 		return (NULL);
 	node->content = content;
 	return (node);
-}
-
-int main()
-{
-	
 }
