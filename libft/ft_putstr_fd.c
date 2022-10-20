@@ -6,7 +6,7 @@
 /*   By: bsamli <bsamli@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 17:28:53 by bsamli            #+#    #+#             */
-/*   Updated: 2022/10/17 18:54:16 by bsamli           ###   ########.fr       */
+/*   Updated: 2022/10/20 16:47:42 by bsamli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,10 @@ void	ft_putstr_fd(char *s, int fd)
 		ft_putchar_fd(s[i], fd);
 		i++;
 	}
+}
+
+int main()
+{
+	int fd = open("fd", O_RDWR | O_CREAT);
+	ft_putstr_fd("selamin aleykum hayirli isler", fd);
 }

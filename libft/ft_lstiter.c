@@ -6,7 +6,7 @@
 /*   By: bsamli <bsamli@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:45:09 by bsamli            #+#    #+#             */
-/*   Updated: 2022/10/19 15:45:10 by bsamli           ###   ########.fr       */
+/*   Updated: 2022/10/20 18:42:06 by bsamli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+

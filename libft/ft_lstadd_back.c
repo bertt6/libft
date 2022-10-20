@@ -6,7 +6,7 @@
 /*   By: bsamli <bsamli@student.42istanbul.com.t    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 17:28:32 by bsamli            #+#    #+#             */
-/*   Updated: 2022/10/18 15:30:51 by bsamli           ###   ########.fr       */
+/*   Updated: 2022/10/20 18:06:31 by bsamli           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		list->next = new;
 }
+

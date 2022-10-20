@@ -48,7 +48,7 @@ RM = rm -rf
 
 CC = gcc
 
-FLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 OBJS = $(SRC:%.c=%.o)
 
@@ -61,21 +61,26 @@ NAME = libft.a
 all: $(NAME)
 
 %.o: %.c
-	$(CC) -c $(FLAGS) -o $@ $<
+	@$(CC) -c $(FLAGS) -o $@ $<
 #$@, oluşturulan hedefin adıdır ve $< ilk ön koşuldur
 
-$(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJS) 
+	@ar rcs $(NAME) $(OBJS)
 
 clean: 
-	$(RM) $(OBJS) $(BONUSOBJS)
+	@$(RM) $(OBJS) $(BONUSOBJS)
 
 fclean:	clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
 bonus: $(BONUSOBJS)
-	$(CC) -c $(BONUSSRC) $(FLAGS)
-	ar rcs $(NAME) $(BONUSOBJS)
+	@$(CC) -c $(BONUSSRC) $(CFLAGS)
+	@ar rcs $(NAME) $(BONUSOBJS)
+
+
+#	target: rule
+#	iç
+
 
