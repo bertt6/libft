@@ -76,5 +76,3 @@ bonus: $(BONUSOBJS)
 	@$(CC) -c $(BONUSSRC) $(CFLAGS)
 	@ar rcs $(NAME) $(BONUSOBJS)
 
-.PHONY: all re bonus 
-
